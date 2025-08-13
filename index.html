@@ -6,23 +6,96 @@
   <title>William Kattrup</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
   <style>
-    :root { --ink:#222; --ink-sub:#555; --link:#0b66ff; --bg:#fff; --edge:#e9edf3; }
+    :root {
+      --ink:#2f2f2f; 
+      --ink-sub:#6b6b6b; 
+      --link:#339cff; 
+      --bg:#faf9f7; 
+      --section-bg:#fdfcfb; 
+      --edge:#e2e0dc; 
+    }
     * { box-sizing: border-box; }
-    html, body { margin:0; padding:0; background:var(--bg); color:var(--ink); font-family:'Roboto', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; line-height:1.6; }
-    .wrap { max-width: 820px; margin: 0 auto; padding: 28px 20px 64px; }
-    header { border-bottom:1px solid var(--edge); padding-bottom:16px; margin-bottom:24px; }
-    h1 { font-size: clamp(1.6rem, 4vw, 2.2rem); margin: 0 0 6px; letter-spacing: -0.02em; }
-    .contact { display:flex; flex-wrap:wrap; gap:10px 16px; align-items:center; }
-    .contact a { color:var(--link); text-decoration:none; border-bottom:1px solid transparent; }
-    .contact a:hover { border-color:var(--link); }
-    section { margin: 28px 0; }
-    h2 { font-size: 1.15rem; letter-spacing: .02em; text-transform: uppercase; margin: 0 0 10px; color:#0b3daa; }
-    ol, ul { margin:0; padding-left: 1.2rem; }
-    li { margin: 6px 0; }
-    .note { color: var(--ink-sub); font-size: .95rem; }
+    html, body {
+      margin:0;
+      padding:0;
+      background:var(--bg);
+      color:var(--ink);
+      font-family:'Roboto', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      line-height:1.6;
+    }
+    .wrap { 
+      max-width: 820px; 
+      margin: 0 auto; 
+      padding: 28px 20px 64px; 
+    }
+    header { 
+      border-bottom:1px solid var(--edge); 
+      padding-bottom:16px; 
+      margin-bottom:24px;
+    }
+    h1 { 
+      font-size: clamp(1.6rem, 4vw, 2.2rem); 
+      margin: 0 0 6px; 
+      letter-spacing: -0.02em; 
+      color:#4a7abf;
+    }
+    .contact { 
+      display:flex; 
+      flex-wrap:wrap; 
+      gap:10px 16px; 
+      align-items:center; 
+    }
+    .contact a { 
+      color:var(--link); 
+      text-decoration:none; 
+      border-bottom:1px solid transparent; 
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .contact a:hover { 
+      border-color:var(--link);
+      color:#5ab2ff;
+    }
+    section { 
+      margin: 28px 0; 
+      padding: 20px;
+      background: var(--section-bg);
+      border-radius: 6px;
+      border: 1px solid var(--edge);
+    }
+    h2 { 
+      font-size: 1.15rem; 
+      letter-spacing: .02em; 
+      text-transform: uppercase; 
+      margin: 0 0 10px; 
+      color:#4a7abf;
+    }
+    ol, ul { 
+      margin:0; 
+      padding-left: 1.2rem; 
+    }
+    li { 
+      margin: 6px 0; 
+    }
+    a { 
+      color: var(--link); 
+    }
+    a:hover { 
+      color:#5ab2ff; 
+    }
+    .note { 
+      color: var(--ink-sub); 
+      font-size: .95rem; 
+    }
     @media (prefers-color-scheme: dark) {
-      :root { --ink:#e6e7ea; --ink-sub:#b9bdc7; --link:#86aaff; --bg:#0b0f16; --edge:#1b2230; }
-      h2 { color:#9bb8ff; }
+      :root { 
+        --ink:#e6e7ea; 
+        --ink-sub:#c0c6d1; 
+        --link:#9ec9ff; 
+        --bg:#0f141b; 
+        --section-bg:#1a212b; 
+        --edge:#223040; 
+      }
+      h2 { color:#b5d0ff; }
     }
   </style>
 </head>
@@ -32,9 +105,9 @@
       <h1>William Kattrup</h1>
       <div class="contact">
         <strong>Contact:</strong>
-        <a href="mailto:william_kattrup@brown.edu">william_kattrup@brown.edu</a>
+        <a href="mailto:wkattrup@miami.edu">wkattrup@miami.edu</a>
         <span class="note">•</span>
-        <a href="mailto:wkattrup@campusclimatenetwork.org">wkattrup@campusclimatenetwork.org</a>
+        <a href="mailto:william_kattrup@brown.edu">william_kattrup@brown.edu</a>
       </div>
     </header>
 
@@ -42,13 +115,9 @@
       <h2 id="articles">Articles</h2>
       <ol>
         <li>
-          Kattrup, William. 2023. <a href="https://example.com/insights-on-climate-policy" target="_blank" rel="noopener">“Insights on Climate Policy: Bridging Gaps Between Science and Action.”</a> <span class="note">Climate Research Journal, November 2023.</span>
-        </li>
-        <li>
-          Slevin, Isaac, and William Kattrup. 2022. <a href="https://example.com/climate-justice" target="_blank" rel="noopener">“Climate Justice and Grassroots Movements: A Case for Equity in Climate Action.”</a> <span class="note">International Environmental Studies, September 2022.</span>
-        </li>
-        <li>
-          Roberts, Timmons, and William Kattrup. 2024. <a href="https://example.com/fossil-fuel-education" target="_blank" rel="noopener">"The Fossil Fuel Industry and Higher Education: A Troubling Partnership."</a> <span class="note">Critical Studies in Energy, January 2024.</span>
+          Slevin, Isaac, William Kattrup, Charlotte Marcil, and J. Timmons Roberts.
+          <a href="https://www.sciencedirect.com/science/article/abs/pii/S2214629624004201" target="_blank" rel="noopener">“Beyond dark money: Information subsidies and complex networks of opposition to offshore wind on the US East Coast.”</a>
+          <span class="note"> Energy Research &amp; Social Science 119 (2025): 103829.</span>
         </li>
       </ol>
     </section>
